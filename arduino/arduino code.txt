@@ -1,0 +1,99 @@
+const int R1=7,Y1=6,G1=5, R2=10,Y2=9,G2=8, R3=13, Y3=12, G3=11, P=4, P1=3;
+void setup(){
+Serial.begin(9600);
+pinMode(R1,OUTPUT);
+pinMode(Y1,OUTPUT);
+pinMode(G1,OUTPUT);
+pinMode(R2,OUTPUT);
+pinMode(Y2,OUTPUT);
+pinMode(G2,OUTPUT);
+pinMode(R3,OUTPUT);
+pinMode(Y3,OUTPUT);
+pinMode(G3,OUTPUT);
+pinMode(P, OUTPUT);
+pinMode(P1, OUTPUT);
+} void loop(){
+for(int a = 18; a>0; a--){
+  digitalWrite(R1, LOW);
+  digitalWrite(R2, HIGH);
+  digitalWrite(R3, HIGH);
+  digitalWrite(P, LOW);
+    digitalWrite(P1, HIGH);
+  Serial.println("Red2, Red3, Pedestrian Red");
+  Serial.println(a);
+  if(a>3){
+    digitalWrite(G1, HIGH);
+    Serial.println("Green1");
+    Serial.println(a);
+    delay(1000);
+    }
+else{
+    digitalWrite(G1, LOW);
+  digitalWrite(Y1, HIGH);
+  Serial.println("Yellow1");
+    Serial.println(a);
+     delay(1000);
+    }
+}
+   LED_OFF();
+  for(int a = 18; a>0; a--){
+  digitalWrite(R1, HIGH);
+  digitalWrite(R2, LOW);
+  digitalWrite(R3, HIGH);
+  digitalWrite(P, HIGH);
+    digitalWrite(P1, LOW);
+  Serial.println("Red1, Red3");
+    Serial.println(a);
+  
+  if(a>3){
+    digitalWrite(G2, HIGH);
+    Serial.println("Green2, Pedestrian Green");
+    Serial.println(a);
+    delay(1000);
+    }
+  else{
+    digitalWrite(G2, LOW);
+  digitalWrite(Y2, HIGH);
+  Serial.println("Yellow2");
+    Serial.println(a);
+     delay(1000);
+    }
+  }
+  LED_OFF();
+  for(int a = 18; a>0; a--){
+  digitalWrite(R1, HIGH);
+  digitalWrite(R2, HIGH);
+  digitalWrite(R3, LOW);
+  digitalWrite(P, LOW);
+    digitalWrite(P1, HIGH);
+  Serial.println("Red1, Red2, Pedestrian Red");
+    Serial.println(a);
+  if(a>3){
+    digitalWrite(G3, HIGH);
+    Serial.println("Green3");
+    Serial.println(a);
+     delay(1000);
+    }
+ else{
+    digitalWrite(G3, LOW);
+  digitalWrite(Y3, HIGH);
+  Serial.println("Yellow3");
+    Serial.println(a);
+     delay(1000);
+    }
+  }
+   LED_OFF();
+}
+void LED_OFF(){
+  digitalWrite(R1, LOW);
+  digitalWrite(Y1, LOW);
+  digitalWrite(G1, LOW);
+  digitalWrite(R2, LOW);
+  digitalWrite(Y2, LOW);
+  digitalWrite(G2, LOW);
+  digitalWrite(R3, LOW);
+  digitalWrite(Y3, LOW);
+  digitalWrite(G3, LOW);
+  digitalWrite(P, LOW);
+  digitalWrite(P1, LOW);
+}

@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 300vh;
+    background-image: url(images/bgpic.jpg);
+    background-repeat: no-repeat;
+    background-size:  cover;
+}
+
+.header .navbar{
+    width: 100%;
+    height: 80px;
+    display:  inline-flex;
+    align-items: left;
+    padding-top: 20px;
+}
+
+
+.logo a{
+    text-decoration: bold, none;
+    color: rgba(255, 0, 1, 0.6);
+    display: block;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.menu ul {
+    margin-left: 50px;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin-right: 4px;
+    cursor: pointer;
+    align-items: center;
+    
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.header .contact{
+    color: #fff;
+    margin-left: 400px;
+}
+
+.header .contact ul{
+    margin-left: 51px;
+}
+
+.header .contact ul li{
+    display: inline-block;
+}
+
+.header .contact ul li a{
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.header .contact ul li a span:hover{
+    color:rgba(255, 0, 1, 0.6);
+
+}
+
+.header .contact ul li a.sep{
+    margin: 0 28px;
+    opacity: 0.3;
+}
+
+
+.banner{
+    position: absolute;
+    top: 5%;
+    left: 2;
+    color: #fff;
+}
+.abtme{
+  color:rgba(255, 0, 1, 0.6);  
+}
+.skillsicon ul {
+
+  display:inline-flex;
+    position: center;
+    grid-column-gap: 20px ;
+
+
+}
+.skillsicon ul li :hover{
+    background: rgba(255, 0, 1, 0.6);
+    color: #fff;
+}
+.skillsicon ul li java1 {
+    width: 20px;
+}
+
+.samplepics ul {
+  display:inline-flex;
+    position: center;
+    grid-column-gap: 20px ;
+}
+
+.app-text{
+    padding-left: 200px
+}
+
+.app-text h3{
+    margin-top: 100px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.app-text h1{
+    font-size: 80px;
+    position: relative;
+    color: #fff;
+    margin-top: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.app-text h1 span{
+    color: rgba(255, 0, 1, 0.6);
+}
+.app-text img{
+     color: #fff;    
+    font-size: 15px;
+    display: inline-flex;
+    width: 200px;
+    height: 200px;
+    padding-left: .10rem;
+    -webkit-transition: border-color .3s ease-out;
+    transition: border-color .3s ease-out;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 30%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.app-text p{
+    font-size: 19px;
+    margin: 30px 30px 30px 0;
+    letter-spacing: 1px;
+    color: #fff;
+    padding-right: 250px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+}
+
+.btn-group{
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+
+.primary-btn:before{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 1px;
+
+    top: 88%;
+    left: 0;
+}
+
+.play-btn{
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.play-btn:hover .play-btn-inner i,
+.play-btn:hover span{
+     color: rgba(255, 0, 1, 0.6);
+    transition: all 0.5s;
+    border-color: #c32865;
+}
+
+.btn-group span{
+    font-size: 20px;
+    margin-left: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.play-btn-inner i{
+    color: #fff;    
+    font-size: 15px;
+    display: inline-flex;
+    width: 55px;
+    height: 55px;
+    padding-left: .10rem;
+    -webkit-transition: border-color .3s ease-out;
+    transition: border-color .3s ease-out;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icons{
+    position: absolute;
+    right: 50px;
+    bottom: 2%; 
+}
+.icons i{
+  color: rgba(255, 0, 1, 0.6);  
+  font-size: 15px;
+
+  cursor: pointer;
+}
+
+ 
+.icons ul li{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.icons ul li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 12px 17px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.icons ul li a:hover{
+    background: rgba(255, 0, 1, 0.6);
+    color: #fff;
+}
+
+
+
